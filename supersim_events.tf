@@ -1,4 +1,10 @@
 /*
+ * Version 1.0.0
+ * Copyright © 2021, Twilio
+ * Licence: MIT
+ */
+
+/*
  * Define Terraform variables
  * These are set in the 'setup_aws.sh' script
  */

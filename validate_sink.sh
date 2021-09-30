@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Version 1.0.0
+# Copyright © 2021, Twilio
+# Licence: MIT
+
 JQ_CHECK=$(which jq)
 if [ -z "$JQ_CHECK" ]; then
   echo
