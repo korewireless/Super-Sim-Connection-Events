@@ -1,6 +1,6 @@
 /*
  * Version 1.0.0
- * Copyright © 2021, Twilio
+ * Copyright © 2021, KORE Wireless
  * Licence: MIT
  */
 
@@ -17,7 +17,7 @@ variable "your_computer_external_ip" {
   type    = string
 }
 
-// Randomly generated string to verify connections from Twilio
+// Randomly generated string to verify connections from KORE
 variable "external_id" {
   type = string
 }
@@ -45,7 +45,7 @@ provider "aws" {
  * Set up policies
  */
 
-// Create a Policy to permit Twilio to write records to our Kinesis Stream
+// Create a Policy to permit KORE to write records to our Kinesis Stream
 resource "aws_iam_policy" "supersim_kinesis_stream_record_write_policy" {
   name           = "supersim-kinesis-stream-record-write-policy"
   policy         = jsonencode({
@@ -186,7 +186,7 @@ resource "aws_iam_policy" "supersim_firehose_rw_access_policy" {
  * Set up roles
  */
 
-// Create a Role Twilio will assume to access the Stream
+// Create a Role KORE will assume to access the Stream
 resource "aws_iam_role" "supersim_twilio_access_role" {
   name                 = "supersim-twilio-access-role"
   assume_role_policy   = jsonencode({
@@ -230,7 +230,7 @@ resource "aws_iam_role" "supersim_firehose_access_role" {
  * Attach policies to roles
  */
 
-// Attach the Stream write Policy to the Twilio access Role
+// Attach the Stream write Policy to the KORE access Role
 resource "aws_iam_role_policy_attachment" "supersim_attach_write_policy_to_twilio_access_role" {
   role       = aws_iam_role.supersim_twilio_access_role.name
   policy_arn = aws_iam_policy.supersim_kinesis_stream_record_write_policy.arn
@@ -328,7 +328,7 @@ resource "aws_kinesis_firehose_delivery_stream" "supersim_firehose_pipe" {
  */
 output "EXTERNAL_ID" {
   value       = var.external_id
-  description = "The External ID you will use to create your Twilio Event Streams Sink"
+  description = "The External ID you will use to create your KORE Event Streams Sink"
 }
 
 output "KIBANA_WEB_URL" {

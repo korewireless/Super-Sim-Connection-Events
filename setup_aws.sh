@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Version 1.0.0
-# Copyright © 2021, Twilio
+# Copyright © 2021-23, KORE Wireless
 # Licence: MIT
 
 export TF_VAR_your_aws_region='<YOUR_AWS_REGION>'
