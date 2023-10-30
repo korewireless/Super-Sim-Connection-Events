@@ -1,6 +1,6 @@
-# super-sim-connection-events
+# Super SIM Connection Events
 
-This repo contains scripts and configuration files to accompany our Super SIM Connection Events with AWS ElasticSearch and Kibana tutorial, which you can find in [Twilio docs](https://www.twilio.com/docs/iot/supersim/how-to-monitor-super-sim-connection-events-using-aws-elasticsearch-and-kibana). They are used in [Step 3](https://www.twilio.com/docs/iot/supersim/how-to-monitor-super-sim-connection-events-using-aws-elasticsearch-and-kibana#3-build-out-your-aws-resources) of the tutorial and depend on tools installed during the previous step of the tutorial.
+This repo contains scripts and configuration files to accompany our [Super SIM Connection Events with AWS ElasticSearch and Kibana tutorial](https://www.twilio.com/docs/iot/supersim/how-to-monitor-super-sim-connection-events-using-aws-elasticsearch-and-kibana). They are used in [Step 3](https://www.twilio.com/docs/iot/supersim/how-to-monitor-super-sim-connection-events-using-aws-elasticsearch-and-kibana#3-build-out-your-aws-resources) of the tutorial and depend on tools installed during the previous step of the tutorial.
 
 Transfer all three files to your project directory:
 
@@ -28,4 +28,4 @@ All third-party contributors acknowledge that any contributions they provide wil
 
 ## License and Copyright
 
-The scripts and files in this repo are © 2021, Twilio, Inc. They are licensed under the terms of the [MIT License](LICENSE.md).
+The scripts and files in this repo are © 2021-23, KORE Wireless. They are licensed under the terms of the [MIT License](LICENSE.md).
